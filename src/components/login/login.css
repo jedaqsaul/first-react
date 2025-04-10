@@ -1,0 +1,25 @@
+.login-section {
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-bottom: 100px;
+
+  height: 250px;
+  width: 450px;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-section form input {
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(247, 99, 99);
+}
+.login-section form button {
+  width: 100px;
+  height: 120px;
+  font-size: 20px;
+  color: green;
+}

@@ -1,11 +1,23 @@
-import Greetings, { Greetings2 } from "./components/greetings";
+import "./App.css";
+import AddNumbers from "./components/add-numbers";
+
+import Greetings, {
+  AfternoonGreetings,
+  EveningGreetings,
+  MorningGreetings,
+} from "./components/greetings";
+import Login from "./components/login/login";
 
 function App() {
   return (
     <>
-      <h1>Hello world!</h1>
+      <h1 className="Greetings">Hello world!</h1>
       <Greetings />
-      <Greetings2></Greetings2>
+      <MorningGreetings />
+      <AfternoonGreetings />
+      <EveningGreetings />
+      <Login />
+      <AddNumbers num1={10} num2={24} />
     </>
   );
 }

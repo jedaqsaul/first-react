@@ -1,7 +1,24 @@
+import React from "react";
+
 export default function Greetings() {
-  return <h2>Hello</h2>;
+  return (
+    <React.Fragment>
+      <div className="container">
+        <h2>Hello</h2>
+      </div>
+    </React.Fragment>
+  );
 }
 
-export function Greetings2() {
-  return <h3>The second greeting from basic export</h3>;
+function MorningGreetings() {
+  const greeting = "Good Morning";
+  return <h1>{greeting}</h1>;
 }
+function AfternoonGreetings() {
+  return <h1>Good Afternoon</h1>;
+}
+function EveningGreetings() {
+  return <h1>Good Evening</h1>;
+}
+
+export { MorningGreetings, AfternoonGreetings, EveningGreetings };
